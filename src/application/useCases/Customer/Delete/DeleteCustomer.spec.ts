@@ -1,8 +1,9 @@
+/* eslint-disable @typescript-eslint/unbound-method */
 import { AbstractCustomerRepository } from 'src/application/repositories/Customer';
 import { DeleteCustomerUseCase } from './DeleteCustomer';
-import { left } from 'src/domain/utils/either/either';
 import { RequiredParametersError } from 'src/domain/utils/error/RequiredParametersError';
 import { CustomerErrorMessageEnum } from 'src/domain/enums/customer/ErrorMessage';
+import { left } from 'src/domain/utils/either/either';
 
 describe('DeleteCustomerUseCase', () => {
   let customerRepository: AbstractCustomerRepository;
